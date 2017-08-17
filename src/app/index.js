@@ -1,12 +1,15 @@
 import React from 'react';
+import { View } from 'react-native';
 
-import {
-    Header
-} from '../components';
+import { Header } from '../components/common';
+import AlbumList from '../components/album-list';
 
 const App = () => {
     return (
-      <Header text='Albums'/>
+        <View>
+            <Header headerText={ 'Albums' }/>
+            <AlbumList />
+        </View>
     );
 };
 

@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "postinstall": "react-native-port-patcher --new-port 8088",
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest"
   },
@@ -15,6 +16,7 @@
     "babel-preset-react-native": "2.0.0",
     "eslint-config-rallycoding": "^3.2.0",
     "jest": "20.0.4",
+    "react-native-port-patcher": "^1.0.2",
     "react-test-renderer": "16.0.0-alpha.12"
   },
   "jest": {
